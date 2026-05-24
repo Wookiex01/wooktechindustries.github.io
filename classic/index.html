@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOOK TECH INDUSTRIES // OPERATIONAL TERMINAL</title>
+    <style>
+        /* CORE BRUTALIST TERMINAL STACK */
+        :root {
+            --void: #090909;
+            --panel: #111111;
+            --orange-alert: #FF6B00;
+            --led-green: #00E5A3;
+            --alert-red: #E0004D;
+            --border-low: #262626;
+            --text-muted: #888888;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        body {
+            background-color: var(--void);
+            color: #FFFFFF;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        /* STRUCTURAL CONTAINER */
+        .terminal-container {
+            max-width: 800px;
+            margin: 40px auto;
+            border: 1px solid var(--orange-alert);
+            background-color: var(--panel);
+            box-shadow: 0 0 20px rgba(255, 107, 0, 0.15);
+        }
+
+        /* HEADER LOGISTICS */
+        .terminal-header {
+            border-bottom: 1px solid var(--orange-alert);
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(180deg, #151515 0%, #0C0C0C 100%);
+        }
+
+        .system-title {
+            color: var(--orange-alert);
+            font-weight: bold;
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+        }
+
+        .sector-status {
+            color: var(--led-green);
+            border: 1px solid var(--led-green);
+            padding: 2px 8px;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+        }
+
+        /* MAIN MONITOR INTERFACE */
+        .terminal-body {
+            padding: 30px 20px;
+        }
+
+        .manifesto-block {
+            margin-bottom: 40px;
+            border-left: 3px solid var(--orange-alert);
+            padding-left: 15px;
+        }
+
+        h2 {
+            color: var(--orange-alert);
+            font-size: 1rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        p {
+            font-size: 0.9rem;
+            color: #E0E0E0;
+            margin-bottom: 15px;
+        }
+
+        /* GRID FRAMEWORK FOR PRODUCTION MODULES */
+        .engine-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        @media (max-width: 600px) {
+            .engine-grid { grid-template-columns: 1fr; }
+        }
+
+        .module-box {
+            border: 1px solid var(--border-low);
+            background-color: var(--void);
+            padding: 20px;
+        }
+
+        .module-box:hover {
+            border-color: var(--orange-alert);
+        }
+
+        .metric {
+    font-size: 1.8rem;
+    color: var(--led-green);
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+@media (max-width: 600px) {
+    .engine-grid { grid-template-columns: 1fr; }
+    .metric { font-size: 1.1rem; }
+}
+        /* ACTION NAVIGATION CONTROLS */
+        .control-link {
+            display: inline-block;
+            border: 1px solid var(--orange-alert);
+            color: var(--orange-alert);
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            transition: all 0.2s ease;
+            background: transparent;
+            cursor: pointer;
+        }
+
+        .control-link:hover {
+            background-color: var(--orange-alert);
+            color: var(--void);
+            box-shadow: 0 0 10px rgba(255, 107, 0, 0.4);
+        }
+
+        /* ARCHIVAL SECTOR CONTROL ROUTING */
+        .classic-gateway {
+            border-top: 1px dashed var(--border-low);
+            padding-top: 25px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        /* SECURE COMPLIANCE ANCHOR (FOOTER) */
+        .terminal-footer {
+            border-top: 1px solid var(--border-low);
+            padding: 20px;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .compliance-row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 5px;
+        }
+
+        .legal-anchor {
+            color: var(--text-muted);
+            text-decoration: underline;
+        }
+        .legal-anchor:hover { color: var(--orange-alert); }
+    </style>
+</head>
+<body>
+
+    <div class="terminal-container">
+        <header class="terminal-header">
+            <div class="system-title">WTI // SYSTEM_MONITOR</div>
+            <div class="sector-status">LIVE // PHASE_IV</div>
+        </header>
+
+        <main class="terminal-body">
+            <section class="manifesto-block">
+                <h2>Corporate Mandate // Engines vs Cogs</h2>
+                <p>Wook Tech Industries specialized deployment systems are engineered for high-velocity software compilation. We isolate core engines from behavioral static to secure structural sovereignty across the global sector.</p>
+            </section>
+
+            <div class="engine-grid">
+                <div class="module-box">
+                    <h2>Core Core Tracking</h2>
+                    <p style="font-size: 0.8rem; color: var(--text-muted);">ACTIVE UTILITY MODULE</p>
+                    <div class="metric">Player_CAPITAL_MASTER</div>
+                </div>
+                <div class="module-box">
+                    <h2>Operational Status</h2>
+                    <p style="font-size: 0.8rem; color: var(--text-muted);">LEDGER STATE</p>
+                    <div class="metric">0.00 / SEC</div>
+                </div>
+            </div>
+
+            <section class="classic-gateway">
+                <p style="color: var(--text-muted); font-size: 0.8rem; margin-bottom: 15px;">[ LEGACY ASSET REDIRECT DETECTED ]</p>
+                <a href="./classic/" class="control-link">Accessing Archive: View WTI Classic v1.0</a>
+            </section>
+        </main>
+
+        <footer class="terminal-footer">
+            <div>CORE IDENTITY RECOGNITION LOCK: BLOCK_2026</div>
+            <div class="compliance-row">
+                <div>ENTITY: Wook Tech Industries LLC</div>
+                <div>LOC: Prattsville, Arkansas, USA</div>
+                <div>SECURE LINK: <a href="./privacy.html" class="legal-anchor">wti.tech/privacy</a></div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
